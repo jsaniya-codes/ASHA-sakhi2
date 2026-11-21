@@ -6,7 +6,7 @@
 
 This contains everything you need to run your app locally.
 
-View your app in AI Studio: https://ai.studio/apps/02f1eb5d-4120-468c-a8fe-c840471e15e0
+View your app : asha-sakhi2-fy0v0kdpt-fourbits.vercel.app
 
 ## Run Locally
 
