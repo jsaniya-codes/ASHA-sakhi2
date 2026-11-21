@@ -1,0 +1,52 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+@theme {
+  --font-display: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-sans: "DM Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  html {
+    font-size: 16px;
+  }
+
+  html.font-scale-large {
+    font-size: 17.5px;
+  }
+
+  html.font-scale-xlarge {
+    font-size: 19px;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #f4f6f2;
+    color: #1c2421;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Ensure Leaflet map layers stay below modals and slide-overs */
+.leaflet-container {
+  font-family: var(--font-sans);
+  z-index: 10;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 0.5rem;
+  border: 1px solid #dfe4dc;
+  box-shadow: 0 4px 12px rgba(28, 36, 33, 0.08);
+}
+
+.leaflet-popup-content {
+  margin: 12px 14px;
+}
